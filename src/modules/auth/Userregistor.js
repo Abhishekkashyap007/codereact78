@@ -6,7 +6,7 @@ function Userregistor() {
   return (
     <div className='container mt-5'>
       <div className='row justify-content-center'>
-        <div className='col-md-8 p-5 bg-info rounder shadow'>
+        <div className='col-md-8 p-5 bg-info rounded shadow'>
           <div className='container-fluid'>
             <div className='row text-white'>
               <div className='col-12 text-center pb-2'>
