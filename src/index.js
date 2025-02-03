@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.js";
 import "./Style.css";
@@ -14,13 +15,23 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
 
-  <Abc></Abc>
+  {/* <Abc></Abc>
   <Myfunc></Myfunc>
   <Myheader></Myheader>
   <Myreactbootstarp></Myreactbootstarp>
   <h1>this mui</h1>
-  <Mymui></Mymui>
+  <Mymui></Mymui> */}
 
-  </React.StrictMode>
+  <BrowserRouter>
+  <Routes>
+    <Route path='page' element={<Mymui/>}></Route>
+    <Route path='/' element={<Myheader/>}></Route>
+    <Route path='*' element={<Myfunc/>}></Route>
+  </Routes>
+  
+  
+  </BrowserRouter>
+
+</React.StrictMode>
 );
 
