@@ -1,13 +1,11 @@
 import React, { Fragment } from 'react'
-import Headerpage from '../shares/Headerpage'
 import Footerpage from '../shares/Footerpage'
 import { Outlet } from 'react-router-dom'
 
-function Paymentlanding() {
+function Courselandingpage() {
   return (
-   <Fragment>
-    <Headerpage/>
-    <div className='mainpage'>
+    <Fragment>
+    <div className='mainpage' style={{marginTop:"0px",minHeight:"85vh"}}>
         <Outlet></Outlet>
     </div>
     <Footerpage/>
@@ -15,4 +13,4 @@ function Paymentlanding() {
   )
 }
 
-export default Paymentlanding
+export default Courselandingpage
