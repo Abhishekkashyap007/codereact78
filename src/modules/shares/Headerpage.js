@@ -26,6 +26,13 @@ function Headerpage() {
             <li className="nav-item">
               <Link className="nav-link" to="paymentdashboard">Dashboard</Link>
             </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="editor">ckeditor</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="pagination">UI pagination</Link>
+            </li>
+
 
             {/* <li className="nav-item dropdown">
           <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">

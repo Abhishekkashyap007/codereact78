@@ -20,6 +20,8 @@ import Paymentgraph from './modules/payment/Paymentgraph';
 import Paymentdashboard from './modules/payment/Paymentdashboard';
 import { Provider } from 'react-redux';
 import { mystore } from './modules/redux/Mystoredata';
+import Myonlineeditor from './modules/payment/Myonlineeditor';
+import Mypagination from './modules/payment/Mypagination';
 
 const Paymentdetails = lazy(() => import('./modules/payment/Paymentdetails'));
 
@@ -39,6 +41,8 @@ root.render(
             <Route path='about' element={<Paymentabout />}></Route>
             <Route path='paygraph' element={<Paymentgraph />}></Route>
             <Route path='paymentdashboard' element={<Paymentdashboard />}></Route>
+            <Route path='editor' element={<Myonlineeditor/>}></Route>
+            <Route path='pagination' element={<Mypagination/>}></Route>
             <Route path='detailspage/:id' element={<Productdetails />} />
             <Route path='payment-details' element={<Suspense fallback={<h1 className='mylader'>Loading....</h1>}>
               <Paymentdetails />
