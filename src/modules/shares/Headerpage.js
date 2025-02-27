@@ -5,7 +5,7 @@ function Headerpage() {
   return (
     <nav className="navbar navbar-expand-lg bg-success">
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">Pathshala</a>
+        <a className="navbar-brand" href="#">EduApp</a>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
@@ -24,7 +24,7 @@ function Headerpage() {
               <Link className="nav-link" to="paygraph">Graph</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="paymentdashboard">Dashboard</Link>
+              <Link className="nav-link" to="paymentdashboard">use of Redux</Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="editor">ckeditor</Link>

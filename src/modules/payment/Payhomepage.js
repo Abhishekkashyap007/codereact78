@@ -29,7 +29,7 @@ function Payhomepage() {
         <div>
             Call API in React js
             <input type="button" value="call api" onClick={myapi} />
-            <div className='container'>
+            <div className='container apps2'>
                 <div className='row'>
                     {mydata.map((m) => {
                         return (

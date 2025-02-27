@@ -20,6 +20,22 @@
     transition-duration: 300ms;
 }
 
+.apps1 .card{
+    width: 300px;  
+}
+
+.apps1 .card:hover{
+    transform: scale(1.1, 1.1);
+    transition-duration: 300ms;
+}
+.apps2 .card{
+    height: 600px;
+    width: 400px;
+}
+.apps2 img{
+    height: 400px;
+    width: 400px;
+}
 .mylader {
     color: red;
     font-size: 50px;

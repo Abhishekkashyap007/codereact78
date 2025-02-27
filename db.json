@@ -1,0 +1,31 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "ravi",
+      "phone": "88888888",
+      "email": "kumar@gmail.com",
+      "gender": "female",
+      "pass": "444444",
+      "repass": "4444"
+    },
+    {
+      "id": "ebe5",
+      "username": "abhishek",
+      "phone": "7088597179",
+      "email": "ak555585955@gmail.com",
+      "gender": "Female",
+      "pass": "12345678",
+      "repass": "12345678"
+    },
+    {
+      "id": "2aae",
+      "username": "khushu",
+      "phone": "07088597179",
+      "email": "ak555585955@gmail.com",
+      "gender": "Female",
+      "pass": "addddddddfd",
+      "repass": ""
+    }
+  ]
+}

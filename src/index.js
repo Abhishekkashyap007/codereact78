@@ -22,6 +22,10 @@ import { Provider } from 'react-redux';
 import { mystore } from './modules/redux/Mystoredata';
 import Myonlineeditor from './modules/payment/Myonlineeditor';
 import Mypagination from './modules/payment/Mypagination';
+import Myjsonlanding from './modules/jsonfiles/Myjsonlanding';
+import Myjsonform from './modules/jsonfiles/Myjsonform';
+import Myjsondetailspage from './modules/jsonfiles/Myjsondetailspage';
+import Feeslandingpage from './modules/fees/Feeslandingpage';
 
 const Paymentdetails = lazy(() => import('./modules/payment/Paymentdetails'));
 
@@ -41,8 +45,8 @@ root.render(
             <Route path='about' element={<Paymentabout />}></Route>
             <Route path='paygraph' element={<Paymentgraph />}></Route>
             <Route path='paymentdashboard' element={<Paymentdashboard />}></Route>
-            <Route path='editor' element={<Myonlineeditor/>}></Route>
-            <Route path='pagination' element={<Mypagination/>}></Route>
+            <Route path='editor' element={<Myonlineeditor />}></Route>
+            <Route path='pagination' element={<Mypagination />}></Route>
             <Route path='detailspage/:id' element={<Productdetails />} />
             <Route path='payment-details' element={<Suspense fallback={<h1 className='mylader'>Loading....</h1>}>
               <Paymentdetails />
@@ -51,6 +55,12 @@ root.render(
           <Route path='landing/course' element={<Courselandingpage />}>
             <Route path='' element={<Coursehomepage />}></Route>
           </Route>
+          <Route path='landing/jsondata' element={<Courselandingpage />}>
+            <Route path='' element={<Myjsonlanding />}></Route>
+            <Route path='addnewuser' element={<Myjsonform />}></Route>
+            <Route path='edit/:id' element={<Myjsondetailspage />}></Route>
+          </Route>
+          <Route path='landing/fees' element={<Feeslandingpage/>}></Route>
         </Routes>
       </Provider>
     </BrowserRouter>
